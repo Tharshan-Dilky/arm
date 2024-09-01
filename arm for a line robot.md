@@ -1,5 +1,5 @@
 # arm
-
+#### https://chatgpt.com/share/64536d29-79fe-4369-a2d2-24b8f3a71816
 
 To add object detection and gripping functionality to your crane arm using an ultrasonic sensor, you'll need to integrate the sensor into your existing setup. Here’s a step-by-step guide to achieve this:
 
