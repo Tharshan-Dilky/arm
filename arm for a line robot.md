@@ -107,3 +107,40 @@ To add object detection and gripping functionality to your crane arm using an ul
    - **Gripper Mechanism:** If you have a separate servo for gripping, ensure it’s properly calibrated to hold and release objects securely.
 
 With this setup, your crane arm will be able to detect objects using the ultrasonic sensor and perform actions like gripping and moving based on the distance measurements. Let me know if you need further assistance!
+
+To connect a servo motor to an Arduino, you’ll need to connect three wires from the servo to the Arduino board. Here’s a simple guide:
+
+### **Servo Motor Pinout:**
+1. **Power (Red)**: Connects to the 5V pin on the Arduino.
+2. **Ground (Black/Brown)**: Connects to the GND pin on the Arduino.
+3. **Signal (Yellow/Orange)**: Connects to a PWM-capable digital pin on the Arduino (e.g., pin 9).
+
+### **Wiring Diagram:**
+
+1. **Power (Red Wire)**:
+   - Connect to the **5V** pin on the Arduino.
+
+2. **Ground (Black/Brown Wire)**:
+   - Connect to the **GND** pin on the Arduino.
+
+3. **Signal (Yellow/Orange Wire)**:
+   - Connect to a PWM-capable digital pin on the Arduino (e.g., pin 9).
+
+### **Example Wiring:**
+
+- **Red Wire (Power)**: 5V on Arduino
+- **Black/Brown Wire (Ground)**: GND on Arduino
+- **Yellow/Orange Wire (Signal)**: Pin 9 on Arduino
+
+### **Important Notes:**
+
+- **Power Supply**: Ensure the servo’s power requirements are met. If your servo requires more current than the Arduino can supply, you might need an external power source. In that case, connect the external power source’s ground to the Arduino’s ground to have a common ground.
+- **Voltage Levels**: Most servos operate at 5V, which is compatible with the Arduino’s 5V output. Ensure that the servo you are using operates at this voltage or use an appropriate power supply.
+
+### **Basic Connection Summary:**
+
+1. **Servo Red Wire** to **Arduino 5V**
+2. **Servo Black/Brown Wire** to **Arduino GND**
+3. **Servo Yellow/Orange Wire** to **Arduino Digital Pin 9**
+
+This setup will allow the Arduino to control the servo motor using the PWM signal. If you have multiple servos or other components, just make sure to manage the power requirements and connections properly.
